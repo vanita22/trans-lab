@@ -156,3 +156,38 @@ body{
 	border-style: none;
 }
 
+/*Index 3*/
+
+#box4{
+	background-color: #F9BA08;
+	height: 45vh;
+}
+
+#box4 img{
+	margin-top: 70px;
+}
+
+#box5{
+	margin-top: 20px;
+	flex-direction: column;
+}
+
+#box5 span{
+	color: black;
+	background-color: white;	
+	height: auto;
+	padding: 10px 45px;	
+}
+
+#box5 input{
+	width: 250px;
+	margin-top: 30px;
+	color: black;
+	background-color: transparent;
+	border-style: none;
+	border-bottom: 1px solid #373636;
+	margin-bottom: 30px;
+}
+
+
+
