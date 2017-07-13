@@ -1,1 +1,81 @@
-/* YeyeYeee código aquí */
+/*color gris: #373636;
+  color amarillo: #D5B90A;
+  color gris claro: #CFCECC;  */
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: #373636;
+	text-align: center;/*para centrar el contenido*/
+	color: white;
+}
+
+#principal{	
+	color: #D5B90A;
+}
+
+#principal img{
+	margin-top: 40%;
+}
+
+#principal h1{
+	margin-top: 5%;
+	font-weight: 900;
+	font-size: 70px;
+}
+
+#formulario{
+	background-color: white;
+	width: 100%;
+	height: auto;
+	color: #CFCECC;
+	margin-top: 20%;
+
+}
+
+#formulario span{	
+	width: 90%;
+	height: 9vh;
+	color: #CFCECC;
+	font-size: 50px;
+	margin-top: 25px;
+	margin-left: 25px;
+}
+
+#formulario input{	
+	width: 85%;
+	height: 9vh;
+	color: #CFCECC;
+	font-size: 50px;
+	border-style: none;
+}
+
+.btn{
+	width: 100%;
+	height: 9vh;
+	background-color: #D5B90A;
+	color: #373636;
+	font-size: 50px;
+}
+
+#formulario hr{
+	color: #373636;	
+}
+
+#box{
+	margin-top: 20px;
+}
+
+#box p{
+	text-align: left;
+	font-size: 35px;
+}
+
+#box h1{	
+	font-size: 40px;
+	margin-top: 20%;
+}
+
+#box h1 a{	
+	color: #D5B90A;
+	font-weight: 700;
+}
