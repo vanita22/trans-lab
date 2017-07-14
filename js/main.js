@@ -56,4 +56,39 @@ $(document).ready(function(){
 
 			$("#tarjeta").val("");
 	})	
+
+	/*API calculo*/
+
+	$(".btn4").click(function(){
+		var tarjeta = $("#tarjeta").val();
+		var opciones = $("#opciones").val();
+		var alto = $("opciones#alto option:selected").val();
+		var medio = $("opciones#medio option:selected").val();
+		var bajo = $("opciones#bajo option:selected").val();
+
+		if(opciones == alto){
+
+			$.ajax({
+				url: 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?data',
+				type: 'GET',
+				dataType: 'json',
+				data: {'bip' : tarjeta}			
+			})
+
+			.done(function(el) {	
+				$(".calculo").append('<h3>costo pasaje</h3>'+'<br>'+'<h5>$740</h5>');		
+				$(".calculo").append('<h3>Saldo total</h3>'+'<br>'+'<h5>'+(el.saldoTarjeta - 740)+'</h5>');
+				/*console.log(el);*/
+			})
+
+			.fail(function() {
+				console.log("error");
+			})
+			.always(function() {
+				console.log("complete");
+			}); 
+		}
+			$("#tarjeta").val("");
+
+	})	
 })
