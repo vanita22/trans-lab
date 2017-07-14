@@ -226,6 +226,16 @@ body{
 	text-align: left;
 	padding: 5px;
 }
+
+.usuario{
+	width: 200px;
+	height: auto;
+	background-color: white;
+	color: black;
+	font-weight: 900;
+	padding: 5px;
+	margin-left: 20%;
+}
 /*Index 4*/
 
 #box6{
