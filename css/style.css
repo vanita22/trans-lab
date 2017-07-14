@@ -199,7 +199,7 @@ body{
 	flex-direction: column;
 }
 
-#box5 span{
+#box5.usuario{
 	color: black;
 	background-color: white;	
 	height: auto;
@@ -358,6 +358,29 @@ body{
 	font-weight: 900;
 	margin-top: 30px;
 	border-style: none;
+}
+
+.calculo h3{
+	width: 250px;
+	height: auto;
+	padding: 5px;
+	background-color: #373636;
+	color: white;
+	margin-top: 50px;
+	margin-left: 30px;
+	font-size: 15px;
+}
+
+.calculo h5{
+	width: 250px;
+	height: 50px;	
+	background-color: #F9BA08;
+	color: white;
+	margin-left: 30px;
+	font-size: 25px;
+	padding: 30px;
+	margin-top: -30px;
+	font-weight: bold;
 }
 
 
