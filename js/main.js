@@ -39,7 +39,7 @@ $(document).ready(function(){
 		var tarjeta = $("#tarjeta").val();
 
 			$.ajax({
-				url: 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?data',
+				url: 'https://bip-servicio.herokuapp.com/api/v1/solicitudes.json?data',
 				type: 'GET',
 				dataType: 'json',
 				data: {'bip' : tarjeta}			
@@ -58,6 +58,11 @@ $(document).ready(function(){
 			}); 
 
 			$("#tarjeta").val("");
+
+			if((('#opciones option:selected').val()).to('click')){
+				$("#tarjeta").disable();
+				alert("no puedes ingresar numero");
+			}
 	})	
 
 	/*API calculo*/
@@ -65,7 +70,7 @@ $(document).ready(function(){
 	$(".btn4").click(function(){
 		var tarjeta = $("#tarjeta").val();
 				$.ajax({
-						url: 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?data',
+						url: 'https://bip-servicio.herokuapp.com/api/v1/solicitudes.json?data',
 						type: 'GET',
 						dataType: 'json',
 						data: {'bip' : tarjeta}			
