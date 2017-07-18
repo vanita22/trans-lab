@@ -148,4 +148,9 @@ $(document).ready(function(){
 	$("#open").on("click", function(){
 		$(".navbar-collapse").show(1000);
 	})
+
+	var mail = document.getElementById("email").value;
+ 	localStorage.setItem("correo", mail);
+ 	var correo = localStorage.getItem(correo);
+ 		console.log(correo);
 })	

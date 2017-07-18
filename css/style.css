@@ -8,6 +8,37 @@ body{
 	color: white;
 }
 
+#tuerca{
+	animation-duration: 2s;/*controla el tiempo de animación*/
+	animation-iteration-count: infinite;/*Hace que la animación sea infinita, sin detenerse*/    
+    animation-direction: alternate;/*Hace que la animación vuelva a su punto de origen*/
+    animation-name: tuerca;
+}
+
+@keyframes tuerca{
+	0%{
+		transform: rotate(-75deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+button{	   
+    animation-name: botons;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+
+@keyframes botons{
+	0%{
+		transform: scale(0, 0);
+	}
+	100%{
+		transform: scale(1, 1);
+	}	
+}
+
 #principal{
 	background-color: #373636;
 	text-align: center;
