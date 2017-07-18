@@ -138,4 +138,14 @@ $(document).ready(function(){
 		});	
 		$("#tarjeta").val("");
 	});
+
+	/*Funcionamiento para abrir y cerrar el menú*/
+
+	$("#close").on("click", function(){
+		$(".navbar-collapse").hide();
+	})
+
+	$("#open").on("click", function(){
+		$(".navbar-collapse").show(1000);
+	})
 })	
